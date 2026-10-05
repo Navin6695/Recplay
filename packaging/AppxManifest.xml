@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
+  IgnorableNamespaces="uap rescap desktop">
+
+  <Identity
+    Name="RecplayStudio.Recplay"
+    Publisher="CN=RecplayStudio"
+    Version="2.0.0.0"
+    ProcessorArchitecture="x64" />
+
+  <Properties>
+    <DisplayName>Recplay 2.0 Studio</DisplayName>
+    <PublisherDisplayName>Recplay Studio</PublisherDisplayName>
+    <Logo>assets\icon.png</Logo>
+    <Description>All-in-one AI Studio Screen Recorder, Webcam Facecam Cutout &amp; High-Fidelity Cyberpunk Media Player.</Description>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0" />
+  </Dependencies>
+
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+    <DeviceCapability Name="microphone" />
+    <DeviceCapability Name="webcam" />
+  </Capabilities>
+
+  <Applications>
+    <Application Id="RecplayApp"
+      Executable="Recplay.exe"
+      EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements
+        DisplayName="Recplay 2.0 Studio"
+        Description="AI Studio Screen Recorder and Media Player"
+        BackgroundColor="#060C18"
+        Square150x150Logo="assets\icon.png"
+        Square44x44Logo="assets\icon.png">
+        <uap:DefaultTile Wide310x150Logo="assets\logo_banner.png" />
+        <uap:SplashScreen Image="assets\logo_banner.png" BackgroundColor="#060C18" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+</Package>

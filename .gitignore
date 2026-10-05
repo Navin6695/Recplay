@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# PyInstaller / Build
+build/
+dist/
+*.spec
+*.manifest
+
+# Distribution packages (stored in GitHub Releases, not git tree due to 100MB limit)
+*.exe
+*.zip
+*.msix
+*.appx
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test artifacts & temp recordings
+*.mp4
+*.wav
+*.flac
+*.mkv
+test_*.png
+*.onnx
+scratch/
+temp/

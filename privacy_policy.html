@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Recplay 2.0 Studio</title>
+    <style>
+        :root {
+            --bg-color: #060C18;
+            --card-bg: #0F172A;
+            --text-primary: #F8FAFC;
+            --text-secondary: #94A3B8;
+            --accent-cyan: #00F0FF;
+            --accent-blue: #0284C7;
+            --border-color: #1E293B;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.65;
+            padding: 30px 20px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 28px;
+        }
+        .header img {
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+        }
+        .header-title h1 {
+            font-size: 26px;
+            color: var(--accent-cyan);
+            letter-spacing: 0.5px;
+        }
+        .header-title p {
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+        .effective-date {
+            display: inline-block;
+            background: rgba(0, 240, 255, 0.1);
+            color: var(--accent-cyan);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            border: 1px solid rgba(0, 240, 255, 0.3);
+        }
+        h2 {
+            font-size: 18px;
+            color: var(--accent-cyan);
+            margin-top: 28px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        p, li {
+            color: #CBD5E1;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        .highlight-box {
+            background: rgba(2, 132, 199, 0.12);
+            border-left: 4px solid var(--accent-cyan);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+        .highlight-box p {
+            margin: 0;
+            color: #E2E8F0;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="assets/icon.png" alt="Recplay Logo">
+            <div class="header-title">
+                <h1>RECPLAY 2.0 STUDIO</h1>
+                <p>Official Privacy Policy &amp; Data Protection Statement</p>
+            </div>
+        </div>
+
+        <div class="effective-date">Last Updated &amp; Effective Date: October 2026</div>
+
+        <div class="highlight-box">
+            <p>🛡️ <b>Core Privacy Commitment:</b> Recplay 2.0 Studio is engineered as an offline-first, client-side application. We do NOT collect, transmit, store, sell, or monitor your recordings, camera video, microphone audio, screen captures, or keystrokes. Everything stays 100% on your local computer.</p>
+        </div>
+
+        <h2>1. Overview</h2>
+        <p>Recplay ("we", "our", or "the Application") is an AI Studio Screen Recorder and High-Fidelity Media Player developed for Windows. This Privacy Policy discloses our data practices, in strict compliance with the Microsoft Store Certification Policies (Section 10.5.1 and 10.5.2) and global privacy standards (GDPR, CCPA).</p>
+
+        <h2>2. Data Collection and Usage</h2>
+        <ul>
+            <li><b>Screen and Display Capture:</b> Screen frames are captured strictly in memory on your local graphics processor and CPU while you actively initiate a recording. Captured frames are compressed directly to your chosen local destination folder (by default in <code>Videos/Recplay_Recordings</code>). No video data is ever transmitted across the internet.</li>
+            <li><b>Microphone and System Audio:</b> Audio input is accessed exclusively during recording sessions when you have audio capture enabled. Audio is processed directly on your system's audio interface via WASAPI/PortAudio and muxed into your local video file.</li>
+            <li><b>Webcam &amp; Facecam Video:</b> Camera feeds are processed in real-time on your computer using local computer vision models (e.g., OpenCV / background blur / cutout). No raw or processed facial data or images leave your machine.</li>
+            <li><b>Subtitles &amp; Speech-to-Text:</b> When live captions or subtitle generation is enabled, speech recognition is executed locally or via standard secure OS speech APIs solely for generating local <code>.srt</code> files or subtitles burned into your video.</li>
+            <li><b>Keyboard &amp; Mouse Cues:</b> Keystrokes and cursor halo effects are monitored locally on your physical display during recordings to display visual tutorial badges (e.g. "Ctrl+C") directly onto the video. Keystrokes are never logged to disk, transmitted, or stored.</li>
+        </ul>
+
+        <h2>3. Cloud &amp; Network Communication</h2>
+        <p>Recplay does not contain telemetry, tracking analytics (e.g., Google Analytics, Mixpanel), third-party advertising SDKs, or background trackers. The only optional network interactions are:</p>
+        <ul>
+            <li><b>Online Hardware License Check:</b> If a customer uses an online multi-device protection key, a one-way cryptographic SHA-256 hash of the machine ID and key ID is queried over HTTPS to ensure 1-PC-per-key compliance. No personally identifiable information (PII), names, email addresses, or system files are transmitted.</li>
+            <li><b>Microsoft Store Licencing:</b> When acquired through the Microsoft Store, licensing is governed directly by Microsoft's secure WinRT Store services.</li>
+        </ul>
+
+        <h2>4. Third-Party Sharing</h2>
+        <p>We do NOT share, sell, lease, or distribute any user data to third parties, advertising networks, data brokers, or external entities under any circumstances.</p>
+
+        <h2>5. Storage and Security</h2>
+        <p>All recorded video files (MP4, MKV), audio files (MP3, WAV), screenshots (PNG), and chapter markers are stored directly on your computer's local hard drive under your user profile. You retain 100% full ownership and control over your files.</p>
+
+        <h2>6. Uninstallation &amp; Removal</h2>
+        <p>Recplay respects standard Windows operating system conventions. You can cleanly uninstall Recplay at any time via <b>Windows Control Panel &gt; Programs and Features</b> or <b>Windows Settings &gt; Apps &gt; Installed Apps</b>. Uninstallation removes all program files, application shortcuts, and registry entries without leaving lingering background services.</p>
+
+        <h2>7. Contact and Support</h2>
+        <p>For questions or support regarding this Privacy Policy or Recplay Studio, contact our team:</p>
+        <ul>
+            <li><b>Developer:</b> Recplay Studio</li>
+            <li><b>Official Website / Repository:</b> <a href="https://recplay.github.io/privacy">https://recplay.github.io/privacy</a></li>
+            <li><b>Support Inquiries:</b> support@recplay.studio</li>
+        </ul>
+
+        <div class="footer">
+            &copy; 2026 Recplay Studio. All rights reserved. Recplay 2.0 Studio Suite &amp; Media Player.
+        </div>
+    </div>
+</body>
+</html>
